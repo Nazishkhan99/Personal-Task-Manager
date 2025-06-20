@@ -1,0 +1,118 @@
+.task-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: #2e2e6c;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.task-item:hover {
+  box-shadow: 0 2px 8px rgba(3, 183, 120, 0.08);
+}
+
+.task-item.completed {
+  opacity: 0.9;
+  text-decoration:red line-through;
+
+ 
+}
+
+/* Main section */
+.task-item-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  min-width: 180px;
+}
+
+.task-item-main input[type='checkbox'] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.task-item-main span,
+.task-item-main input.edit-input {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  min-width: 100px;
+}
+
+.edit-input {
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+/* Priority & Due Date */
+.task-meta {
+  font-size: 0.85rem;
+  color: #000502;
+  background: #fbf5f9b2;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* Action Buttons */
+.task-item-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.task-item-actions button {
+  border: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.edit-btn {
+  background: #1c6ae7;
+  color: white;
+}
+.edit-btn:hover {
+  background: #2563eb;
+}
+
+.save-btn {
+  background: #10b981;
+  color: white;
+}
+.save-btn:hover {
+  background: #059669;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .task-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .task-item-actions {
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .task-item-main {
+    width: 100%;
+  }
+}

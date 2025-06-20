@@ -1,0 +1,116 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(219, 210, 210, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-header h2 {
+    font-style: italic;
+  margin: 0;
+  font-size: 1.65rem;
+  color: #3adf04;
+  text-decoration: underline;
+}
+
+.modal-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #e00505;
+}
+
+.modal-field {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0.2rem 0 0.8rem;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #eae6e6;
+  font-family: inherit;
+  line-height: 1.5;
+  resize: none;
+  min-height: 1.5rem;
+}
+
+.modal-field.editable {
+  border-bottom: 1px solid #04b75d;
+}
+
+.modal-field.editable:focus {
+  outline: none;
+  border-bottom: 1px solid #3b82f6;
+
+}
+
+.modal-label {
+  font-weight: 600;
+  color: #45f306;
+  margin-top: 0.5rem;
+}
+
+.edit-btn-top {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #3b82f6;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+
+
+
+
+
+.modal-top-right {
+  display: flex;
+  
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.download-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.download-btn:hover {
+  background-color: #1e3a8a;
+}

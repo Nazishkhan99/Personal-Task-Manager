@@ -1,0 +1,24 @@
+.app-container {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #c7d2fe, #fbcfe8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  .app-container {
+    background: linear-gradient(135deg, #1e293b, #111827);
+    color: #f8fafc;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app-container {
+    padding: 1rem;
+  }
+}

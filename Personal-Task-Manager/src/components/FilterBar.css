@@ -1,0 +1,52 @@
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-bar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #e5e7eb;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-bar button:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .task-item {
+    background-color: #475569;
+    border-color: #334155;
+  }
+
+  .task-form input,
+  .task-form select,
+  .task-form input[type="date"] {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border-color: #334155;
+  }
+
+  .edit-input {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border-color: #334155;
+  }
+
+  .filter-bar button {
+    background-color: #334155;
+    color: #f8fafc;
+  }
+
+  .filter-bar button:hover {
+    background-color: #2563eb;
+    color: #fff;
+  }
+}
